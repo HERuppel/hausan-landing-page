@@ -46,7 +46,7 @@ const Section5 = () => {
                             <Input type='text' id='email' placeholder='E-mail' />
                         </View>
                         <View display='grid' width='100%' margin='auto'> 
-                            <Input type='text' id='subject' placeholder='Assunto'/>
+                            <Input type='text' id='subject' placeholder='Telefone'/>
                             <TextArea id='msg' placeholder='Mensagem'/>
                             <View text-align='center'>
                                 <Touchable id='msg' type='submit' backgroundColor={secondaryColor} width='50%' borderRadius='100px' padding='10px' color={lightColor}>

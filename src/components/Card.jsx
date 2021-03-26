@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Image, Ul, Item, ImageBox , Li, Content } from '../styled/common'
+import { Image, Ul, Item, ImageBox , Li, Content, H2 } from '../styled/common'
 
 import { AiOutlineInstagram, AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai'
 
-const Card = ({ name, photo, role, instagram, linkedin, github }) => {
+const Card = ({ name, photo, role, instagram, linkedin, github, number }) => {
 
     const instaLink = instagram ? `https://www.instagram.com/${instagram}` : 'https://www.instagram.com/'
     const linkedinLink = linkedin ? `https://www.linkedin.com/${linkedin}` : 'https://www.linkedin.com/'
@@ -13,7 +13,8 @@ const Card = ({ name, photo, role, instagram, linkedin, github }) => {
     return (
         <Item> 
             <ImageBox> 
-                <Image id='photo' height='100%' src={photo} />
+                <Image id='photo' height='100%' src={photo} 
+                    transform={number === 2 ? 'scaleX(-1);' : number === 3 ? 'scaleY(-1);' : null } filter={number === 4 ? 'invert(100%);' : null} />
             </ImageBox>
             <Ul>
                 <Li><a rel='noreferrer' href={instaLink} target='_blank'><AiOutlineInstagram className='i' size='30px' color='#000'></AiOutlineInstagram></a></Li> {/* Li:  fa fa-facebook */}
@@ -21,10 +22,10 @@ const Card = ({ name, photo, role, instagram, linkedin, github }) => {
                 <Li><a rel='noreferrer' href={gitLink} target='_blank'><AiFillGithub className='i' size='30px' color='#000'></AiFillGithub></a></Li> {/* Li:  fa fa-facebook */}
             </Ul>
             <Content>
-                <h2>
+                <H2 transform={number === 2 ? 'scaleX(-1);' : number === 3 ? 'scaleY(-1);' : null } filter={number === 4 ? 'invert(50%);' : null} >
                     {name} <br/>
                     <span>{role}</span>
-                </h2>
+                </H2 >
             </Content>
         </Item>
     )

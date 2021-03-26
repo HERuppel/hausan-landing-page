@@ -3,13 +3,7 @@ import React from 'react'
 import { View, Text, Section, secondaryColor } from '../styled/common'
 
 import Card from './Card'
-import ProfilePic from '../assets/valmor.jpg'
-import ProfilePic2 from '../assets/tuca.jpg'
-import ProfilePic3 from '../assets/neni.jpeg'
-import ProfilePic4 from '../assets/venancio.jpg'
-import ProfilePic5 from '../assets/fcaminhao.jpg'
-import ProfilePic6 from '../assets/sanfra.png'
-import ProfilePic7 from '../assets/carimbo.png'
+import ProfilePic from '../assets/profile.jpg'
 
 const Section3 = () => {
 
@@ -17,42 +11,32 @@ const Section3 = () => {
         <Section id='team'>
             <View min-height='100vh' display='block' flexDirection='column' justifyContent='center' alignItems='center'>
                <Text id='teamtitle' textAlign='left' padding='0px 0px 0px 100px' fontSize='35px' color={secondaryColor}>NOSSO TIME</Text>
-               <View display='flex'  justifyContent='center' flexWrap='wrap'>
+               <View display='flex' flexWrap='wrap' justifyContent='center'>
                     <Card 
-                        photo={ProfilePic6}
-                        name='Lando "Landinho Ribeiro"'
-                        role='Presidente'
-                    />
-                    <Card 
-                        photo={ProfilePic2}
-                        name='Antônio "Tuca"'
-                        role='Front-End'
-                    />
-                    <Card 
-                        photo={ProfilePic3}
-                        name='Dirlei "Neni do Cambau"'
-                        role='Back-End'
-                    />
-                    <Card 
-                        photo={ProfilePic4}
-                        name='Mariano "Batateiro"'
-                        role='Mobile'
-                    />
-                    <Card 
-                        photo={ProfilePic5}
-                        name='Odilor'
-                        role='Designer'
+                        photo={ProfilePic}
+                        name='Renato Ruppel'
+                        role='Front-end'
+                        number={1}
                     />
                     <Card 
                         photo={ProfilePic}
-                        name='Valmor "Da Prefeitura"'
-                        role='Quebra-galho'
+                        name='Renato Ruppel'
+                        role='Back-end'
+                        number={2}
                     />
                     <Card 
-                        photo={ProfilePic7}
-                        name='Carimbo'
-                        role='Beta Tester'
+                        photo={ProfilePic}
+                        name='Renato Ruppel'
+                        role='Mobile'
+                        number={3}
                     />
+                    <Card 
+                        photo={ProfilePic}
+                        name='Renato Ruppel'
+                        role='Python Dev'
+                        number={4}
+                    />
+                    
                </View>
             </View>
         </Section>

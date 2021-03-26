@@ -224,6 +224,8 @@ export const Image = styled.img`
     height: auto;
     max-width: 100%;
     display: block;
+    transform: ${props => props};
+    filter: ${props => props};
 `
 
 export const Item = styled.div`
@@ -269,6 +271,8 @@ export const Content = styled.div`
     ${Item}:hover & {
         transform: translateY(0);
     }
+
+    ${props => props};
 `
 
 export const ImageBox = styled.div`
@@ -440,6 +444,10 @@ export const NavItem = styled.button`
     display: flex;
 
 
+    ${props => props};
+`
+
+export const H2 = styled.h2`
     ${props => props};
 `
 

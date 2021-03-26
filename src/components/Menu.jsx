@@ -14,20 +14,20 @@ const Menu = ({ display, setMenu }) => {
                 </NavItem>
             </View>
             <View id='columnlinks' display='flex' flex-direction='column' align-items='center'>
-                <NavItem>
-                    <Aa color={secondaryColor} href='#start' onClick={setMenu}>Início</Aa>
+                <NavItem margin='10px'>
+                    <Aa color={secondaryColor} margin='0px' href='#start' onClick={setMenu}>Início</Aa>
                 </NavItem>
-                <NavItem>
-                    <Aa color={secondaryColor} href='#description' onClick={setMenu}>Descrição</Aa>
+                <NavItem margin='10px'>
+                    <Aa color={secondaryColor} margin='0px' href='#description' onClick={setMenu}>Descrição</Aa>
                 </NavItem>
-                <NavItem>
-                    <Aa color={secondaryColor} href='#team' onClick={setMenu}>Time</Aa>
+                <NavItem margin='10px'>
+                    <Aa color={secondaryColor} margin='0px' href='#team' onClick={setMenu}>Time</Aa>
                 </NavItem>
-                <NavItem>
-                    <Aa color={secondaryColor} href='#about' onClick={setMenu}>Sobre</Aa>
+                <NavItem margin='10px'>
+                    <Aa color={secondaryColor} margin='0px' href='#about' onClick={setMenu}>Sobre</Aa>
                 </NavItem>
-                <NavItem>
-                    <Aa color={secondaryColor} href='#contact' onClick={setMenu}>Contato</Aa>
+                <NavItem margin='10px'>
+                    <Aa color={secondaryColor} margin='0px' href='#contact' onClick={setMenu}>Contato</Aa>
                 </NavItem>            
             </View>
         </MenuContainer>
