@@ -14,25 +14,25 @@ const Section3 = () => {
                <View display='flex' flexWrap='wrap' justifyContent='center'>
                     <Card 
                         photo={ProfilePic}
-                        name='Renato Ruppel'
+                        name='Developer'
                         role='Front-end'
                         number={1}
                     />
                     <Card 
                         photo={ProfilePic}
-                        name='Renato Ruppel'
+                        name='Developer'
                         role='Back-end'
                         number={2}
                     />
                     <Card 
                         photo={ProfilePic}
-                        name='Renato Ruppel'
+                        name='Developer'
                         role='Mobile'
                         number={3}
                     />
                     <Card 
                         photo={ProfilePic}
-                        name='Renato Ruppel'
+                        name='Developer'
                         role='Python Dev'
                         number={4}
                     />

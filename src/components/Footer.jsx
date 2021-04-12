@@ -52,7 +52,7 @@ const Footer = () => {
                     </View>
                 </View>
             </View>
-            <Text id='copyright' fontSize='18px' color={lightColor}>© 2021 iTaquari | Engenharia de Sistemas. [By Renato C. Ruppel]</Text>
+            <Text id='copyright' fontSize='18px' color={lightColor}>© 2021 iTaquari | Engenharia de Sistemas. [By Renato C. Ruppel] *Empresa Fictícia</Text>
         </FooterComponent>
 
     )
